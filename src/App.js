@@ -4,13 +4,19 @@ import './App.css'
 import Greet from './components/Greet'
 // eslint-disable-next-line
 import Welcome from "./components/Welcome";
+// eslint-disable-next-line
 import Message from "./components/Message";
+import Function from "./components/Function";
+import ClassClick from "./components/ClassClick";
+
 
 class App extends Component{
     render() {
       return(
        <div className="App">
-         <Message/>
+          <ClassClick/>
+          <Function/>
+         {/*<Message/>*/}
         {/* <Greet name="ronaldo" hero="Bad Man"/>*/}
         {/*   <Greet name="Chan"/>*/}
         {/*   <button>Push</button>*/}
