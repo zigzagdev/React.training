@@ -1,7 +1,8 @@
 import React from  'react'
 
-function Greet() {
-    return <h1>  Hello World ! </h1>
-}
 
+const Greet = (props) => {
+    console.log(props)
+    return <h2> Bonjour {props.name} to {props.hero}</h2>
+    }
 export default Greet;
