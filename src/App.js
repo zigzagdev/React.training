@@ -8,14 +8,17 @@ import Welcome from "./components/Welcome";
 import Message from "./components/Message";
 import Function from "./components/Function";
 import ClassClick from "./components/ClassClick";
+import  BindingHandler from "./components/BindingHandler"
+
 
 
 class App extends Component{
     render() {
       return(
        <div className="App">
-          <ClassClick/>
-          <Function/>
+           <BindingHandler/>
+          {/*<ClassClick/>*/}
+          {/*<Function/>*/}
          {/*<Message/>*/}
         {/* <Greet name="ronaldo" hero="Bad Man"/>*/}
         {/*   <Greet name="Chan"/>*/}
