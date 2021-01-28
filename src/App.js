@@ -9,14 +9,16 @@ import Message from "./components/Message";
 import Function from "./components/Function";
 import ClassClick from "./components/ClassClick";
 import  BindingHandler from "./components/BindingHandler"
-
-
+import Parent from "./components/Parent";
+import ChildrenComponent from "./components/Children";
 
 class App extends Component{
     render() {
       return(
        <div className="App">
-           <BindingHandler/>
+           {/*<BindingHandler/>*/}
+           <Parent/>
+           <ChildrenComponent/>
           {/*<ClassClick/>*/}
           {/*<Function/>*/}
          {/*<Message/>*/}
