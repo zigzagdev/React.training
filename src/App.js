@@ -12,15 +12,16 @@ import  BindingHandler from "./components/BindingHandler"
 // import Parent from "./components/Parent";
 // import ChildrenComponent from "./components/Children";
 import UserGreeting from "./components/UserGreeting";
-
+import NameList from "./components/NameList";
 
 
 class App extends Component{
     render() {
       return(
        <div className="App">
+           <NameList/>
            {/*<BindingHandler/>*/}
-           <UserGreeting/>
+           {/*<UserGreeting/>*/}
            {/*<Parent/>*/}
            {/*<ChildrenComponent/>*/}
           {/*<ClassClick/>*/}
