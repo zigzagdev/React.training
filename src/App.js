@@ -20,6 +20,14 @@ import styles from  './appStyles.module.css'
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 import LifecycleB from "./components/LifecycleB";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import Columns from "./components/Columns";
+
+
+
+
+
 
 
 
@@ -28,10 +36,13 @@ class App extends Component{
     render() {
       return(
        <div className="App">
+           <Columns/>
+           <Table/>
+           <FragmentDemo/>
            {/*<h1 className='error'>Error</h1>*/}
            {/*<h1 className={styles.success}>Success</h1>*/}
-           <LifecycleA/>
-           <LifecycleB/>
+           {/*<LifecycleA/>*/}
+           {/*<LifecycleB/>*/}
            {/*<Form/>*/}
            {/*<Inline/>*/}
            {/*<Stylesheet primary={ false }/>*/}
