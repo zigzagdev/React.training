@@ -4,6 +4,10 @@ import './App.css'
 import Greet from './components/Greet'
 // eslint-disable-next-line
 import Welcome from "./components/Welcome";
+import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import FRInput from "./components/FRInput";
+import FRParentInput from "./components/FRParentInput";
 // eslint-disable-next-line
 // import Message from "./components/Message";
 // import Function from "./components/Function";
@@ -23,9 +27,7 @@ import Welcome from "./components/Welcome";
 // import FragmentDemo from "./components/FragmentDemo";
 // import Table from "./components/Table";
 // import Columns from "./components/Columns";
-import PureComp from "./components/PureComp";
-import RegComp from "./components/RegComp";
-import ParentComp from "./components/ParentComp";
+// import PureComp from "./components/PureComp";
 
 
 
@@ -35,42 +37,50 @@ import ParentComp from "./components/ParentComp";
 
 
 
-class App extends Component{
+
+
+
+
+
+
+class App extends Component {
     render() {
-      return(
-       <div className="App">
-           <ParentComp/>
-           <RegComp/>
-           <PureComp/>
-           {/*<Columns/>*/}
-           {/*<Table/>*/}
-           {/*<FragmentDemo/>*/}
-           {/*<h1 className='error'>Error</h1>*/}
-           {/*<h1 className={styles.success}>Success</h1>*/}
-           {/*<LifecycleA/>*/}
-           {/*<LifecycleB/>*/}
-           {/*<Form/>*/}
-           {/*<Inline/>*/}
-           {/*<Stylesheet primary={ false }/>*/}
-           {/*<NameList/>*/}
-           {/*<BindingHandler/>*/}
-           {/*<UserGreeting/>*/}
-           {/*<Parent/>*/}
-           {/*<ChildrenComponent/>*/}
-          {/*<ClassClick/>*/}
-          {/*<Function/>*/}
-         {/*<Message/>*/}
-        {/* <Greet name="ronaldo" hero="Bad Man"/>*/}
-        {/*   <Greet name="Chan"/>*/}
-        {/*   <button>Push</button>*/}
-        {/*    <Greet/>*/}
-        {/*   <Greet name="Eda"/>*/}
+        return (
+            <div className="App">
+                <FRParentInput/>
+                <FRInput/>
+                {/*<FocusInput/>*/}
+                {/*<RefsDemo/>*/}
+                {/*<PureComp/>*/}
+                {/*<Columns/>*/}
+                {/*<Table/>*/}
+                {/*<FragmentDemo/>*/}
+                {/*<h1 className='error'>Error</h1>*/}
+                {/*<h1 className={styles.success}>Success</h1>*/}
+                {/*<LifecycleA/>*/}
+                {/*<LifecycleB/>*/}
+                {/*<Form/>*/}
+                {/*<Inline/>*/}
+                {/*<Stylesheet primary={ false }/>*/}
+                {/*<NameList/>*/}
+                {/*<BindingHandler/>*/}
+                {/*<UserGreeting/>*/}
+                {/*<Parent/>*/}
+                {/*<ChildrenComponent/>*/}
+                {/*<ClassClick/>*/}
+                {/*<Function/>*/}
+                {/*<Message/>*/}
+                {/* <Greet name="ronaldo" hero="Bad Man"/>*/}
+                {/*   <Greet name="Chan"/>*/}
+                {/*   <button>Push</button>*/}
+                {/*    <Greet/>*/}
+                {/*   <Greet name="Eda"/>*/}
 
-        {/*<Welcome name="Matthew"/>*/}
-        {/*<Welcome name="ronaldo"/>*/}
-       </div>
-      );
+                {/*<Welcome name="Matthew"/>*/}
+                {/*<Welcome name="ronaldo"/>*/}
+            </div>
+        );
     }
 }
 
-export default App;
+export default App ;
