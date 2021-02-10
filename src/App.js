@@ -8,6 +8,7 @@ import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRInput from "./components/FRInput";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemp from "./components/PortalDemo";
 // eslint-disable-next-line
 // import Message from "./components/Message";
 // import Function from "./components/Function";
@@ -47,8 +48,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <FRParentInput/>
-                <FRInput/>
+                <PortalDemp/>
+                {/*<FRParentInput/>*/}
+                {/*<FRInput/>*/}
                 {/*<FocusInput/>*/}
                 {/*<RefsDemo/>*/}
                 {/*<PureComp/>*/}
