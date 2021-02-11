@@ -8,8 +8,10 @@ import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRInput from "./components/FRInput";
 import FRParentInput from "./components/FRParentInput";
-import Hero from "./components/Hero";
-import ErrorBoundary from "./components/ErrorBoundary";
+// import Hero from "./components/Hero";
+// import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 // import PortalDemp from "./components/PortalDemo";
 // eslint-disable-next-line
 // import Message from "./components/Message";
@@ -50,17 +52,17 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-               <ErrorBoundary>
-                <Hero heroName={"Batman"}/>
-               </ErrorBoundary>
+            {/*   <ErrorBoundary>*/}
+            {/*    <Hero heroName={"Batman"}/>*/}
+            {/*   </ErrorBoundary>*/}
 
-               <ErrorBoundary>
-                <Hero heroName={"Matthew"}/>
-               </ErrorBoundary>
+            {/*   <ErrorBoundary>*/}
+            {/*    <Hero heroName={"Matthew"}/>*/}
+            {/*   </ErrorBoundary>*/}
 
-               <ErrorBoundary>
-                <Hero heroName={"Joker"}/>
-               </ErrorBoundary>
+            {/*   <ErrorBoundary>*/}
+            {/*    <Hero heroName={"Joker"}/>*/}
+            {/*   </ErrorBoundary>*/}
                 {/*<PortalDemp/>*/}
                 {/*<FRParentInput/>*/}
                 {/*<FRInput/>*/}
@@ -90,7 +92,8 @@ class App extends Component {
                 {/*   <button>Push</button>*/}
                 {/*    <Greet/>*/}
                 {/*   <Greet name="Eda"/>*/}
-
+                <ClickCounter/>
+                <HoverCounter/>
                 {/*<Welcome name="Matthew"/>*/}
                 {/*<Welcome name="ronaldo"/>*/}
             </div>
