@@ -92,7 +92,7 @@ class App extends Component {
                 {/*   <button>Push</button>*/}
                 {/*    <Greet/>*/}
                 {/*   <Greet name="Eda"/>*/}
-                <ClickCounter/>
+                <ClickCounter name="Matthew"/>
                 <HoverCounter/>
                 {/*<Welcome name="Matthew"/>*/}
                 {/*<Welcome name="ronaldo"/>*/}
