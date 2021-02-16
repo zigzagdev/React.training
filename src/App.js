@@ -12,6 +12,10 @@ import FRParentInput from "./components/FRParentInput";
 // import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter from "./components/Counter";
 // import PortalDemp from "./components/PortalDemo";
 // eslint-disable-next-line
 // import Message from "./components/Message";
@@ -52,6 +56,19 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Counter>
+                    {(count,incrementCount) => (
+                      <ClickCounterTwo count={count} incrementCount={incrementCount} />
+                    )}
+                </Counter>
+                <Counter>
+                    {(count,incrementCount) => (
+                        <HoverCounterTwo count={count} incrementCount={incrementCount} />
+                    )}
+                </Counter>
+                {/*<User render={ (isLoggedIn) => isLoggedIn ? 'Buffon': 'Guest'}/>*/}
+                {/*<ClickCounterTwo/>*/}
+                {/*<HoverCounterTwo/>*/}
             {/*   <ErrorBoundary>*/}
             {/*    <Hero heroName={"Batman"}/>*/}
             {/*   </ErrorBoundary>*/}
@@ -92,8 +109,8 @@ class App extends Component {
                 {/*   <button>Push</button>*/}
                 {/*    <Greet/>*/}
                 {/*   <Greet name="Eda"/>*/}
-                <ClickCounter name="Matthew"/>
-                <HoverCounter/>
+                {/*<ClickCounter name="Matthew"/>*/}
+                {/*<HoverCounter/>*/}
                 {/*<Welcome name="Matthew"/>*/}
                 {/*<Welcome name="ronaldo"/>*/}
             </div>
