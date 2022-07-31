@@ -10,15 +10,15 @@ class App extends Component{
     render() {
       return(
        <div className="App">
-         <Message/>
-        {/* <Greet name="ronaldo" hero="Bad Man"/>*/}
-        {/*   <Greet name="Chan"/>*/}
-        {/*   <button>Push</button>*/}
-        {/*    <Greet/>*/}
-        {/*   <Greet name="Eda"/>*/}
+         {/*<Message/>*/}
+         <Greet name="ronaldo" hero="Bad Man"/>
+           <Greet name="Chan"/>
+           <button>Push</button>
+            <Greet/>
+           <Greet hero="Eda"/>
 
-        {/*<Welcome name="Matthew"/>*/}
-        {/*<Welcome name="ronaldo"/>*/}
+        <Welcome name="Matthew"/>
+        <Welcome name="ronaldo" hero="messi"/>
        </div>
       );
     }
