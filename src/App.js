@@ -10,7 +10,8 @@ class App extends Component{
     render() {
       return(
        <div className="App">
-         {/*<Message/>*/}
+         <Message name="ronaldo" hero="Bad Man"/>
+         <Message/>
          <Greet name="ronaldo" hero="Bad Man"/>
            <Greet name="Chan"/>
            <button>Push</button>
