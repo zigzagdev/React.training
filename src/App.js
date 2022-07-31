@@ -4,9 +4,20 @@ import './App.css'
 import Greet from './components/Greet'
 // eslint-disable-next-line
 import Welcome from "./components/Welcome";
+import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import FRInput from "./components/FRInput";
+import FRParentInput from "./components/FRParentInput";
+// import Hero from "./components/Hero";
+// import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter from "./components/Counter";
+// import PortalDemp from "./components/PortalDemo";
 // eslint-disable-next-line
-import Message from "./components/Message";
-import Counter from "./components/Count";
 
 
 class App extends Component{
@@ -28,4 +39,4 @@ class App extends Component{
     }
 }
 
-export default App;
+export default App ;
