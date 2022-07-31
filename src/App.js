@@ -61,11 +61,6 @@ class App extends Component {
                       <ClickCounterTwo count={count} incrementCount={incrementCount} />
                     )}
                 </Counter>
-                <Counter>
-                    {(count,incrementCount) => (
-                        <HoverCounterTwo count={count} incrementCount={incrementCount} />
-                    )}
-                </Counter>
                 {/*<User render={ (isLoggedIn) => isLoggedIn ? 'Buffon': 'Guest'}/>*/}
                 {/*<ClickCounterTwo/>*/}
                 {/*<HoverCounterTwo/>*/}
@@ -111,8 +106,8 @@ class App extends Component {
                 {/*   <Greet name="Eda"/>*/}
                 {/*<ClickCounter name="Matthew"/>*/}
                 {/*<HoverCounter/>*/}
-                {/*<Welcome name="Matthew"/>*/}
-                {/*<Welcome name="ronaldo"/>*/}
+                <Welcome name="Matthew" hero="messi"/>
+                <Welcome name="Ronaldo"/>
             </div>
         );
     }

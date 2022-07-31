@@ -1,27 +1,25 @@
+import React, {useState} from "react";
 
-import React, { Component } from 'react'
+const Counter = () => {
+  const [count, setCount] = useState(0);
+  const add = () => {
+    setCount( count + 1);
+  }
+  const addfive = () => {
+    setCount( count + 5);
+  }
+  const reset = () => {
+    setCount(0);
+  }
+  // useState()の引数には、最初に設定したい内容のものをもってくる。
+  return(
+    <div>
+      <button onClick={add}>fuck</button>
+      <button onClick={addfive}>fuck</button>
+      <button onClick={reset}>fuck</button>
+      <div>Count {count}</div>
+    </div>
+  )
+}
 
- class Counter extends Component{
-     constructor(props) {
-         super(props)
-         this.state = {
-             count: 0
-         }
-     }
-
-     incrementCount = () => {
-         this.setState(prevState => {
-             return { count: prevState.count +1}
-         })
-     }
-
-     render() {
-       return(
-        <div>
-            {this.props.children(this.state.count, this.incrementCount)}
-        </div>
-       )
-     }
- }
-
- export default Counter ;
+export default Counter;

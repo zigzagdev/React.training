@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 
-
-class Welcome extends Component {
-    render(){
-     return(
-      <h2>Welcome {this.props.name} to {this.props.name}</h2>
-     )
-    }
+const Welcome = ({name, hero}) => {
+  return(
+    <h2>Welcome {hero} to {name}</h2>
+  )
 }
 
 export default Welcome;
