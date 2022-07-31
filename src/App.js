@@ -4,8 +4,10 @@ import './App.css'
 import Greet from './components/Greet'
 // eslint-disable-next-line
 import Welcome from "./components/Welcome";
+// eslint-disable-next-line
 import Message from "./components/Message";
 import Counter from "./components/Count";
+
 
 class App extends Component{
     render() {
@@ -18,7 +20,6 @@ class App extends Component{
            <button>Push</button>
             <Greet/>
            <Greet hero="Eda"/>
-        
         {/*<Welcome name="Matthew"/>*/}
         {/*<Welcome name="ronaldo" hero="messi"/>*/}
          <Counter/>
