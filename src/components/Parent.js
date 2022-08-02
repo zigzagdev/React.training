@@ -11,6 +11,7 @@ const Parent = () => {
       <button onClick={() => setTime(0)}>0</button>
       <Children word={word} time={time}/>
       <button onClick={() => setWord("changed !")}>Click here</button>
+      <button onClick={() => setWord("fuck you !")}>Click here</button>
     </div>
   );
 }
