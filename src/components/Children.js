@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-function Children(props) {
+
+const Children = memo((props) => {
   console.log(props);
-  const comment = 'fuck you';
-  
-  return (
+  return(
     <div>
-      fuck you
+      Count times are {props.time} times pushed.
     </div>
   )
-}
+})
 export default Children;
+
+// Props will inherit everything  from Parent's.

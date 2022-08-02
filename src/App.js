@@ -82,7 +82,6 @@ class App extends Component {
                 {/*<BindingHandler/>*/}
                 {/*<UserGreeting/>*/}
                 <Parent/>
-
                 {/*<ClassClick/>*/}
                 {/*<Function/>*/}
                 {/*<Message/>*/}
