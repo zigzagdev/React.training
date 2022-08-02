@@ -2,16 +2,14 @@ import React, { Component } from 'react'
 import './App.css'
 import Greet from './components/Greet'
 import Welcome from "./components/Welcome";
-import {Link} from "@material-ui/core";
 
 
 class App extends Component{
     render() {
       return(
        <div className="App">
-         <Greet name="props"/>
-           {/*<Welcome/>*/}
-         <Link> Fuck you </Link>
+         <Greet name="Fuck you" age="45"/>
+         <Welcome/>
        </div>
       );
     }
