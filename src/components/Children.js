@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function ChildrenComponent(props) {
-    return(
-      <div>
-        <button onClick={() => props.greetHandler('child')}>Greet parent</button>
-      </div>
-    )
+function Children(props) {
+  console.log(props);
+  const comment = 'fuck you';
+  
+  return (
+    <div>
+      fuck you
+    </div>
+  )
 }
-
-export default ChildrenComponent;
+export default Children;

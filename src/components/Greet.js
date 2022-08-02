@@ -1,8 +1,8 @@
 import React from  'react'
 
 const Greet = (props) => {
-    const {name, hero} = props
-    console.log(name);
+    console.log(props);
+    const {name, hero} = props;
     return <h2> Bonjour {name} to {hero}</h2>
 }
 export default Greet;

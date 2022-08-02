@@ -22,8 +22,8 @@ import Counter from "./components/Counter";
 // import Function from "./components/Function";
 // import ClassClick from "./components/ClassClick";
 // import  BindingHandler from "./components/BindingHandler"
-// import Parent from "./components/Parent";
-// import ChildrenComponent from "./components/Children";
+import Parent from "./components/Parent";
+import Children from "./components/Children";
 // import UserGreeting from "./components/UserGreeting";
 // import NameList from "./components/NameList";
 // import Stylesheet from "./components/Stylesheet";
@@ -39,28 +39,15 @@ import Counter from "./components/Counter";
 // import PureComp from "./components/PureComp";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Counter>
-                    {(count,incrementCount) => (
-                      <ClickCounterTwo count={count} incrementCount={incrementCount} />
-                    )}
-                </Counter>
+                {/*<Counter>*/}
+                {/*    {(count,incrementCount) => (*/}
+                {/*      <ClickCounterTwo count={count} incrementCount={incrementCount} />*/}
+                {/*    )}*/}
+                {/*</Counter>*/}
                 {/*<User render={ (isLoggedIn) => isLoggedIn ? 'Buffon': 'Guest'}/>*/}
                 {/*<ClickCounterTwo/>*/}
                 {/*<HoverCounterTwo/>*/}
@@ -94,8 +81,8 @@ class App extends Component {
                 {/*<NameList/>*/}
                 {/*<BindingHandler/>*/}
                 {/*<UserGreeting/>*/}
-                {/*<Parent/>*/}
-                {/*<ChildrenComponent/>*/}
+                <Parent/>
+
                 {/*<ClassClick/>*/}
                 {/*<Function/>*/}
                 {/*<Message/>*/}
@@ -106,8 +93,8 @@ class App extends Component {
                 {/*   <Greet name="Eda"/>*/}
                 {/*<ClickCounter name="Matthew"/>*/}
                 {/*<HoverCounter/>*/}
-                <Welcome name="Matthew" hero="messi"/>
-                <Welcome name="Ronaldo"/>
+                {/*<Welcome name="Matthew" hero="messi"/>*/}
+                {/*<Welcome name="Ronaldo"/>*/}
             </div>
         );
     }
