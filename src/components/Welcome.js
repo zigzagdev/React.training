@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Greet from "./Greet";
+import {Link} from "@material-ui/core";
 
-class Welcome extends Component{
-    render() {
-     return(
-         <h1> Class Component </h1>
-     )
-    }
+const Welcome = (props) => {
+  console.log(props)
+  return(
+    <div>
+      This is Welcome page.
+    </div>
+  )
 }
 
 export default Welcome;

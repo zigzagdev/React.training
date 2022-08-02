@@ -9,9 +9,8 @@ class App extends Component{
     render() {
       return(
        <div className="App">
-         <Greet name="props"/>
-           {/*<Welcome/>*/}
-         <Link> Fuck you </Link>
+         <Greet name="Fuck you !"/>
+         <Welcome/>
        </div>
       );
     }
