@@ -41,7 +41,6 @@ export class LifecycleA extends Component{
     render() {
       return(
         <div>
-            <div>Lifecycle A</div>
             <button onClick={this.changeState}>Change state</button>
              <h1>Fuck you!!!!! Buffon</h1>
               <LifecycleB/>
