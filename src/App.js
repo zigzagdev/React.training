@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Greet from './components/Greet'
 import Welcome from "./components/Welcome";
+import HookCounterArray from "./components/HookCounterArray";
 
 
 class App extends Component{
@@ -10,6 +11,7 @@ class App extends Component{
        <div className="App">
          <Greet name="Fuck you" age="45"/>
          <Welcome/>
+         <HookCounterArray/>
        </div>
       );
     }
