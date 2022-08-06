@@ -4,6 +4,7 @@ import Greet from './components/Greet'
 // import Welcome from "./components/Welcome";
 // import HookCounterOne from "./components/HookCounterOne";
 import HookMouse from "./components/HookMouse";
+import MouseContainer from "./components/MouseContainer";
 
 class App extends Component{
     render() {
@@ -11,7 +12,8 @@ class App extends Component{
        <div className="App">
          <Greet name="Fuck you" age="45"/>
          {/*<Welcome/>*/}
-         <HookMouse/>
+         {/*<HookMouse/>*/}
+         <MouseContainer/>
          {/*<HookCounterOne/>*/}
        </div>
       );
