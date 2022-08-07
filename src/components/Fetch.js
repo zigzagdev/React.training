@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
 const Fetch = () => {
-  const [todo, setTodo] = useState({});
-  const [id, setId] = useState(1);
-  const [idButton, setIdButton] =useState(1);
+  const [todo, setTodo] = useState(0);
+  const [id, setId] = useState();
+  const [idButton, setIdButton] =useState(0);
   const handleClick = () => {
     setIdButton(id)
   }
@@ -32,4 +32,6 @@ export default Fetch;
 
 // useState takes the initial value of the state variable as an argument like {}, int and str.
 //want to change the initial value, hook with some javascript method like onClick and re rendering.
-// And then u can change initial value to another value.q
+// And then u can change initial value to another value.
+//In this example, initial ID == 0 and if you put a number into inputbox get a number as  a setID and
+// fetch API as a id number and display its title to UI
