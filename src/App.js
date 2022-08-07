@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Greet from './components/Greet'
 import Welcome from "./components/Welcome";
-
+import Fetch from "./components/Fetch";
 
 class App extends Component{
     render() {
@@ -10,6 +10,7 @@ class App extends Component{
        <div className="App">
          <Greet name="Fuck you" age="45"/>
          <Welcome/>
+         <Fetch/>
        </div>
       );
     }
