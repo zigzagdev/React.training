@@ -5,6 +5,7 @@ import Greet from './components/Greet'
 // import HookCounterOne from "./components/HookCounterOne";
 import HookMouse from "./components/HookMouse";
 import MouseContainer from "./components/MouseContainer";
+import InterHookCounter from "./components/InterHookCounter";
 
 class App extends Component{
     render() {
@@ -15,6 +16,7 @@ class App extends Component{
          {/*<HookMouse/>*/}
          <MouseContainer/>
          {/*<HookCounterOne/>*/}
+         <InterHookCounter/>
        </div>
       );
     }
