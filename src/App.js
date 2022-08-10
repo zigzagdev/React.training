@@ -11,7 +11,6 @@ const App = () => {
     </div>
   )
 }
-
 export default App;
 
 //古くなったプロジェクトにおいてのgit clone をする際は、package.jsonのverをremoteからインストールを行い
