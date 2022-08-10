@@ -1,10 +1,9 @@
 import React from 'react'
 
 const Welcome = (props) => {
-  console.log(props)
   return(
     <div>
-      This is Welcome page.
+      This is Welcome page.{props.title}
     </div>
   )
 }
