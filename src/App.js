@@ -1,15 +1,17 @@
 import React from 'react'
 import './App.css'
-import Greet from './components/Greet'
-import Welcome from "./components/Welcome";
-import Count from "./components/Counter"
+// import Greet from './components/Greet'
+// import Welcome from "./components/Welcome";
+// import Count from "./components/Counter"
+import HookCounterThree from "./components/HookCounterThree";
 
 const App = () => {
   return(
     <div className="App">
-      <Greet name="Fuck you" age="45"/>
-      <Welcome/>
-      <Count/>
+      {/*<Greet name="Fuck you" age="45" />*/}
+      {/*<Welcome/>*/}
+      {/*<Count/>*/}
+        <HookCounterThree/>
     </div>
   )
 }
