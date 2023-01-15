@@ -1,7 +1,7 @@
 import React, {useMemo, useState} from "react";
 
 const Counter = () => {
-    const [name, setName] = useState({ firstName: '', lastName: '', nickName: ''});
+    const [name, setName] = useState([]);
     console.log(name)
     return(
         <div>
