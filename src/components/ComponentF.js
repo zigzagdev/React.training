@@ -1,28 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Context, Channel} from "../App"
 
 const ComponentF = () => {
+    const channel = useContext(Context)
+    const Test = useContext(Channel)
   return(
-    <div>
-      <Context.Consumer>
-        {
-          user => {
-            return(
-              <Channel.Consumer>
-                {
-                  channel => {
-                    return(
-                      <div>
-                        this is {user}. And you are {channel}
-                      </div>
-                    )
-                  }
-                }
-              </Channel.Consumer>
-            )}
-        }
-      </Context.Consumer>
-    </div>
+      <header>
+          Welcome back, {channel}!
+          You have {Test} notifications.
+      </header>
   )
 }
 
