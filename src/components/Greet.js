@@ -3,7 +3,7 @@ import React from  'react'
 
 const Greet = (props) => {
 
-    return <h1>  Hello {props.name} ! </h1>
+    return <h1>  Hello {props.age} ! </h1>
 }
 
 export default Greet;

@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.css'
 import Greet from './components/Greet'
-import Welcome from "./components/Welcome";
+// import Welcome from "./components/Welcome";
 import Count from "./components/Counter"
 
 const App = () => {
   return(
     <div className="App">
       <Greet name="Fuck you" age="45"/>
-      <Welcome/>
+      {/*<Welcome/>*/}
       <Count/>
     </div>
   )

@@ -1,31 +1,29 @@
-import React, {useMemo, useState} from "react";
+import React, {useReducer} from "react";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
-  const [second, setSecond] = useState(0);
-  const increment = () => {
-    setCount( count + 1);
+const initialState = 0;
+const reducer = (state, change) => {
+  switch(change) {
+      case 'first':
+          return state + 5
+      case  'second':
+          return state - 5
+      case  'reset' :
+          return  initialState
+      default:
+          return state
   }
-  const twoincrement = () => {
-    setSecond(second +1);
-  }
-  const even = useMemo(() => {
-    let i = 0;
-    while(i<20000) i++
-    return count % 2 === 0
-  }, [count])
-  
-  return(
-    <div>
+}
+
+function Counter() {
+  const [count, dispatch] = useReducer(reducer, initialState)
+  return (
       <div>
-        <button onClick={increment}>Count{count}</button>
-        <span>{even ? "Yes" : "No"}</span>
+          <div>Count  {count}</div>
+        <button onClick={() => dispatch('first')}>First Button</button>
+        <button onClick={() => dispatch('second')}>Second Button</button>
+        <button onClick={() => dispatch('reset')}>reset</button>
       </div>
-      <div>
-        <button onClick={twoincrement}>Pushed{second}</button>
-      </div>
-    </div>
-  )
+  );
 }
 
 export default Counter;
