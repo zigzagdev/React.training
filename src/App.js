@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
-import Greet from './components/Greet'
-import Welcome from "./components/Welcome";
+import Counter from "./components/Counter";
 
 const App =  () => {
   return(
     <div className="App">
-      <Greet name="Fuck you" age="45"/>
-      <Welcome/>
+        Here is demo page .
+        <Counter/>
     </div>
   )
 }
