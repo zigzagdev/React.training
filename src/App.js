@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css'
+import Focus from "./components/Focus";
+import Timer from "./components/Timer";
 
 const App = () => {
   return(
     <div className="App">
         Hello world !!
+        <Focus/>
+        <Timer/>
     </div>
   )
 }
